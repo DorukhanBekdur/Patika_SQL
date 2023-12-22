@@ -1,4 +1,4 @@
-#-Patika.DEV SQL-
+#PATİKA DEV
 <br>
 <br>
 
