@@ -29,6 +29,14 @@ sütunlarındaki verileri sıralayınız.
 ```
 SELECT title, description FROM film;
 ```
+<br><br>
+2-) <strong> film </strong> tablosunda bulunan tüm sütunlardaki verileri film uzunluğu <strong>(length)</strong> 60 dan büyük VE 75 ten küçük olma koşullarıyla sıralayınız.
+
+```
+SELECT * FROM film WHERE length > 60 AND length < 75;
+```
+
+
 
 
 
