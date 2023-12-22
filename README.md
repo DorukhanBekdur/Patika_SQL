@@ -123,7 +123,7 @@ WHERE first_name IN ('Penelope', 'Nick', 'Ed');
 ```
 
 SELECT country FROM country
-WHERE country ~~ 'A%a' 
+WHERE country LIKE 'A%a' 
 
 ```
 
@@ -152,7 +152,7 @@ WHERE country LIKE '_____%n'
 ```
 
 SELECT title FROM film 
-WHERE title ~~* '%T%T%T%T%' 
+WHERE title ILIKE '%T%T%T%T%'
 
 ```
 
