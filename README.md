@@ -21,7 +21,7 @@
  
 <br>
 
-## SQL Ödev 01 | WHERE ve Karşılaştırma & Mantıksal Operatörler 
+## 📄 | SQL Ödev 01 | WHERE ve Karşılaştırma & Mantıksal Operatörler 
 
 <br>
 <br>
@@ -80,7 +80,7 @@ AND NOT (rental_rate = 2.99 OR rental_rate = 4.99);
 <br>
 <br>
 
-## SQL Ödev 02 | BETWEEN & IN
+## 📄 | SQL Ödev 02 | BETWEEN & IN
 
 <br>
 <br>    
@@ -115,7 +115,7 @@ WHERE first_name IN ('Penelope', 'Nick', 'Ed');
 ```
 <br>
 
-## SQL Ödev 03 | LIKE ve ILIKE
+## 📄 | SQL Ödev 03 | LIKE ve ILIKE
 
 <br>
 <br>
@@ -175,7 +175,7 @@ WHERE title LIKE 'C%' AND length > 90 AND rental_rate = 2.99;
 
 <br>
 
-## SQL Ödev 04 | DISTINCT ve COUNT
+## 📄 | SQL Ödev 04 | DISTINCT ve COUNT
 
 <br>
 <br>
@@ -247,7 +247,7 @@ WHERE city ILIKE 'R%';
 
 <br>
 
-## SQL Ödev 05 | ORDER BY | LIMIT ve OFFSET
+## 📄 | SQL Ödev 05 | ORDER BY | LIMIT ve OFFSET
 
 <br>
 <br>
@@ -303,7 +303,7 @@ LIMIT 4;
 <br>
 
 
-## SQL Ödev 06 | AGGREGATE FONKSİYONLAR
+## 📄 | SQL Ödev 06 | AGGREGATE FONKSİYONLAR
 
 <br>
 <br>
@@ -352,7 +352,7 @@ WHERE length > 150;
 ```
 <br>
 
-## SQL Ödev 07 | GROUP BY | HAVING
+## 📄 | SQL Ödev 07 | GROUP BY | HAVING
 
 <br>
 <br>
@@ -409,7 +409,7 @@ LIMIT 1;
 
 <br>
 
-## SQL Ödev 08 | TABLO OLUŞTURMAK | VERİLERİ GÜNCELLEMEK
+## 📄 | SQL Ödev 08 | TABLO OLUŞTURMAK | VERİLERİ GÜNCELLEMEK
 
 <br>
 <br>
