@@ -1,10 +1,9 @@
-
- ![Image](https://r.resimlink.com/QvqbJzUg.png)
+![Image](https://assets-global.website-files.com/6097e0eca1e87557da031fef/63739a32259566fc9428cb1d_Deneme.png)
 
 <br>
 
 
- # SQL Eğitim Patika 
+ # ⚡ SQL Eğitim Patika ⚡
 
 > #### Bu repo'da [Patika](https://academy.patika.dev/) Platformu üzerinde [Gürcan Çekiç](https://www.linkedin.com/in/gurcancekic/) Hocamızın vermiş olduğu. SQL eğitiminde yapmış olduğumuz ödevler bulunmaktadır.
 
