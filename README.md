@@ -25,20 +25,18 @@
 <br>
 <br>
 
-1-) <strong>film </strong>tablosunda bulunan <strong>title</strong> ve <strong>description</strong> 
+Q1 -) <strong> film </strong> tablosunda bulunan <strong> title</strong> ve <strong> description</strong> 
 sütunlarındaki verileri sıralayınız.
 
 ```
-
 SELECT title, description FROM film;
-
 ```
 
 <br>
 <br>
 <br>
 
-2-) <strong>film</strong>  tablosunda bulunan tüm sütunlardaki verileri film uzunluğu <strong>(length)</strong>  60 dan büyük <strong>VE</strong>  75 ten küçük olma koşullarıyla sıralayınız.
+Q2-) <strong>film</strong>  tablosunda bulunan tüm sütunlardaki verileri film uzunluğu <strong>(length)</strong>  60 dan büyük <strong>VE</strong>  75 ten küçük olma koşullarıyla sıralayınız.
 
 ```
 SELECT * FROM film
@@ -48,7 +46,7 @@ WHERE length > 60 AND length < 75;
 <br>
 <br>
 
-3-)  <strong>film</strong> tablosunda bulunan tüm sütunlardaki verileri  <strong>rental_rate</strong> 0.99  <strong>VE</strong>  <strong>replacement_cost</strong> 12.99  <strong>VEYA</strong> 28.99 olma koşullarıyla sıralayınız.
+Q3-)  <strong>film</strong> tablosunda bulunan tüm sütunlardaki verileri  <strong>rental_rate</strong> 0.99  <strong>VE</strong>  <strong>replacement_cost</strong> 12.99  <strong>VEYA</strong> 28.99 olma koşullarıyla sıralayınız.
 
 ```
 SELECT * FROM film
@@ -59,7 +57,7 @@ OR replacement_cost = 28.99;
 <br>
 <br>
 
-4-) <strong>customer</strong> tablosunda bulunan <strong>first_name</strong> sütunundaki değeri 'Mary' olan müşterinin <strong>last_name</strong> sütunundaki değeri nedir?
+Q4-) <strong>customer</strong> tablosunda bulunan <strong>first_name</strong> sütunundaki değeri 'Mary' olan müşterinin <strong>last_name</strong> sütunundaki değeri nedir?
 
 ```
 SELECT last_name FROM customer
@@ -70,7 +68,7 @@ WHERE first_name = 'Mary';
 <br>
 <br>
 
-5-) <strong>film</strong>  tablosundaki <strong>uzunluğu(length)</strong>  50 ten büyük OLMAYIP aynı zamanda <strong>rental_rate</strong>  değeri 2.99 <strong>veya</strong>  4.99 OLMAYAN verileri sıralayınız.
+Q5-) <strong>film</strong>  tablosundaki <strong>uzunluğu(length)</strong>  50 ten büyük OLMAYIP aynı zamanda <strong>rental_rate</strong>  değeri 2.99 <strong>veya</strong>  4.99 OLMAYAN verileri sıralayınız.
 
 ```
 SELECT * FROM film
@@ -86,7 +84,7 @@ AND NOT (rental_rate = 2.99 OR rental_rate = 4.99);
 <br>    
 <br>
 
-1-) <strong>film</strong> tablosunda bulunan tüm sütunlardaki verileri <strong>replacement cost</strong> değeri 12.99 dan büyük eşit ve 16.99 küçük olma koşuluyla sıralayınız ( BETWEEN - AND yapısını kullanınız.)
+Q1-) <strong>film</strong> tablosunda bulunan tüm sütunlardaki verileri <strong>replacement cost</strong> değeri 12.99 dan büyük eşit ve 16.99 küçük olma koşuluyla sıralayınız ( BETWEEN - AND yapısını kullanınız.)
 
 ```
 SELECT * FROM film 
@@ -97,7 +95,7 @@ WHERE replacement_cost BETWEEN 12.99 AND 16.99;
 <br>
 <br>
 
-2-) <strong>actor</strong> tablosunda bulunan <strong>first_name</strong> ve <strong>last_name</strong> sütunlardaki verileri <strong>first_name</strong> 'Penelope' veya 'Nick' veya 'Ed' değerleri olması koşuluyla sıralayınız. ( IN operatörünü kullanınız.)
+Q2-) <strong>actor</strong> tablosunda bulunan <strong>first_name</strong> ve <strong>last_name</strong> sütunlardaki verileri <strong>first_name</strong> 'Penelope' veya 'Nick' veya 'Ed' değerleri olması koşuluyla sıralayınız. ( IN operatörünü kullanınız.)
 
 ```
 SELECT first_name, last_name FROM actor 
@@ -107,7 +105,7 @@ WHERE first_name IN ('Penelope', 'Nick', 'Ed');
 <br>
 <br>
 
-3-) <strong>film</strong> tablosunda bulunan tüm sütunlardaki verileri <strong>rental_rate</strong> 0.99, 2.99, 4.99 VE <strong>replacement_cost</strong> 12.99, 15.99, 28.99 olma koşullarıyla sıralayınız. ( IN operatörünü kullanınız.)
+Q3-) <strong>film</strong> tablosunda bulunan tüm sütunlardaki verileri <strong>rental_rate</strong> 0.99, 2.99, 4.99 VE <strong>replacement_cost</strong> 12.99, 15.99, 28.99 olma koşullarıyla sıralayınız. ( IN operatörünü kullanınız.)
 
 ```
 SELECT first_name, last_name FROM actor 
@@ -121,7 +119,7 @@ WHERE first_name IN ('Penelope', 'Nick', 'Ed');
 <br>
 <br>
 
-1-)  <strong>country</strong> tablosunda bulunan  <strong>country</strong> sütunundaki ülke isimlerinden 'A' karakteri ile başlayıp 'a' karakteri ile sonlananları sıralayınız.
+Q1-)  <strong>country</strong> tablosunda bulunan  <strong>country</strong> sütunundaki ülke isimlerinden 'A' karakteri ile başlayıp 'a' karakteri ile sonlananları sıralayınız.
 
 ```
 
@@ -136,7 +134,7 @@ WHERE country LIKE 'A%a'
 <br>
 <br>
 
-2-) <strong>country</strong> tablosunda bulunan <strong>country</strong> sütunundaki ülke isimlerinden en az 6 karakterden oluşan ve sonu 'n' karakteri ile sonlananları sıralayınız.
+Q2-) <strong>country</strong> tablosunda bulunan <strong>country</strong> sütunundaki ülke isimlerinden en az 6 karakterden oluşan ve sonu 'n' karakteri ile sonlananları sıralayınız.
 
 ```
 
@@ -150,7 +148,7 @@ WHERE country LIKE '_____%n'
 <br>
 <br>
 
-3-) <strong>film</strong> tablosunda bulunan <strong>title</strong> sütunundaki film isimlerinden en az 4 adet büyük ya da küçük harf farketmesizin <strong>'T'</strong> karakteri içeren film isimlerini sıralayınız.
+Q3-) <strong>film</strong> tablosunda bulunan <strong>title</strong> sütunundaki film isimlerinden en az 4 adet büyük ya da küçük harf farketmesizin <strong>'T'</strong> karakteri içeren film isimlerini sıralayınız.
 
 ```
 
@@ -164,7 +162,7 @@ WHERE title ILIKE '%T%T%T%T%'
 <br>
 <br>
 
-4-) <strong>film</strong> tablosunda bulunan tüm sütunlardaki verilerden <strong>title</strong> 'C' karakteri ile başlayan ve uzunluğu (length) 90 dan büyük olan ve <strong>rental_rate</strong> 2.99 olan verileri sıralayınız.
+Q4-) <strong>film</strong> tablosunda bulunan tüm sütunlardaki verilerden <strong>title</strong> 'C' karakteri ile başlayan ve uzunluğu (length) 90 dan büyük olan ve <strong>rental_rate</strong> 2.99 olan verileri sıralayınız.
 
 ```
 
@@ -181,7 +179,7 @@ WHERE title LIKE 'C%' AND length > 90 AND rental_rate = 2.99;
 <br>
 <br>
 
-1-)  <strong>film</strong> tablosunda bulunan  <strong>replacement_cost</strong> sütununda bulunan birbirinden farklı değerleri sıralayınız.
+Q1-)  <strong>film</strong> tablosunda bulunan  <strong>replacement_cost</strong> sütununda bulunan birbirinden farklı değerleri sıralayınız.
 
 ```
 
@@ -194,7 +192,7 @@ SELECT DISTINCT replacement_cost FROM film
 <br>
 <br>
 
-2-) <strong>film</strong> tablosunda bulunan <Strong>replacement_cost</strong> sütununda birbirinden farklı kaç tane veri vardır?
+Q2-) <strong>film</strong> tablosunda bulunan <Strong>replacement_cost</strong> sütununda birbirinden farklı kaç tane veri vardır?
 
 ```
 
@@ -207,7 +205,7 @@ SELECT COUNT (DISTINCT replacement_cost) FROM film;
 <br>
 <br>
 
-3-) <strong>film</strong> tablosunda bulunan film isimlerinde  <strong>(title)</strong> kaç tanesini T karakteri ile başlar ve aynı zamanda  <strong>rating</strong> 'G' ye eşittir?
+Q3-) <strong>film</strong> tablosunda bulunan film isimlerinde  <strong>(title)</strong> kaç tanesini T karakteri ile başlar ve aynı zamanda  <strong>rating</strong> 'G' ye eşittir?
 
 ```
 
@@ -222,7 +220,7 @@ WHERE title LIKE 'T%' AND rating = 'G';
 
 
 
-4-) <strong>country</strong> tablosunda bulunan ülke isimlerinden (country) kaç tanesi <strong>5</strong> karakterden oluşmaktadır?
+Q4-) <strong>country</strong> tablosunda bulunan ülke isimlerinden (country) kaç tanesi <strong>5</strong> karakterden oluşmaktadır?
 
 
 ```
@@ -236,7 +234,7 @@ where country like '_____';
 <br>
 <br>
 
-5-) city tablosundaki şehir isimlerinin kaç tanesi 'R' veya r karakteri ile biter?
+Q5-) city tablosundaki şehir isimlerinin kaç tanesi 'R' veya r karakteri ile biter?
 
 ```
 
@@ -253,7 +251,7 @@ WHERE city ILIKE 'R%';
 <br>
 <br>
 
-1-) film tablosunda bulunan ve film ismi (title) 'n' karakteri ile biten en uzun (length) 5 filmi sıralayınız.
+Q1-) film tablosunda bulunan ve film ismi (title) 'n' karakteri ile biten en uzun (length) 5 filmi sıralayınız.
 
 ```
 
@@ -270,7 +268,7 @@ LIMIT 5;
 <br>
 <br>
 
-2-) film tablosunda bulunan ve film ismi (title) 'n' karakteri ile biten en kısa (length) ikinci(6,7,8,9,10) 5 filmi(6,7,8,9,10) sıralayınız.
+Q2-) film tablosunda bulunan ve film ismi (title) 'n' karakteri ile biten en kısa (length) ikinci(6,7,8,9,10) 5 filmi(6,7,8,9,10) sıralayınız.
 
 
 ```
@@ -288,16 +286,14 @@ LIMIT 5 OFFSET 5;
 <br>
 <br>
 
-3-) customer tablosunda bulunan last_name sütununa göre azalan yapılan sıralamada store_id 1 olmak koşuluyla ilk 4 veriyi sıralayınız.
+Q3-) customer tablosunda bulunan last_name sütununa göre azalan yapılan sıralamada store_id 1 olmak koşuluyla ilk 4 veriyi sıralayınız.
 
 
 ```
-
 SELECT * FROM customer
 WHERE store_id = 1
 ORDER BY last_name DESC
 LIMIT 4;
-
 ```
 
 
@@ -311,13 +307,11 @@ LIMIT 4;
 <br>
 <br>
 
-1-) film tablosunda bulunan rental_rate sütunundaki değerlerin ortalaması nedir?
+Q1-) film tablosunda bulunan rental_rate sütunundaki değerlerin ortalaması nedir?
 
 
 ```
-
 SELECT ROUND(AVG(rental_rate),2) FROM film ;
-
 ```
 
 
@@ -326,42 +320,34 @@ SELECT ROUND(AVG(rental_rate),2) FROM film ;
 <br>
 <br>
 
-2-) film tablosunda bulunan filmlerden kaç tanesi 'C' karakteri ile başlar?
+Q2-) film tablosunda bulunan filmlerden kaç tanesi 'C' karakteri ile başlar?
 
 ```
-
 SELECT COUNT(*) FROM film
 WHERE title LIKE 'C%';
-
 ```
 
 <br>
 <br>
 <br>
 
-3-) film tablosunda bulunan filmlerden rental_rate değeri 0.99 a eşit olan en uzun (length) film kaç dakikadır?
+Q3-) film tablosunda bulunan filmlerden rental_rate değeri 0.99 a eşit olan en uzun (length) film kaç dakikadır?
 
 ```
-
 SELECT MAX(length) FROM film 
 WHERE rental_rate = 0.99;
-
 ```
 
 <br>
 <br>
 <br>
 
-4-) ffilm tablosunda bulunan filmlerin uzunluğu 150 dakikadan büyük olanlarına ait kaç farklı replacement_cost değeri vardır?
-
+Q4-) ffilm tablosunda bulunan filmlerin uzunluğu 150 dakikadan büyük olanlarına ait kaç farklı replacement_cost değeri vardır?
 
 ```
-
 SELECT COUNT(DISTINCT replacement_cost) FROM film 
 WHERE length > 150;
-
 ```
-
 <br>
 
 
