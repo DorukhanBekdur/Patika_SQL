@@ -6,7 +6,7 @@
 
  # SQL Eğitim Patika 
 
-> #### Bu repo'da [Patika](https://academy.patika.dev/) SQL eğitiminde yapmış olduğumuz ödevler bulunmaktadır.
+> #### Bu repo'da [Patika](https://academy.patika.dev/) Platformu üzerinde [Gürcan Çekiç](linkedin.com/in/gurcancekic) Hocamızın vermiş olduğu. SQL eğitiminde yapmış olduğumuz ödevler bulunmaktadır.
 
 <br>
 
