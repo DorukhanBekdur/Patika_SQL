@@ -303,7 +303,7 @@ LIMIT 4;
 <br>
 
 
-## SQL Ödev 06 | Aggregate Fonksiyonlar
+## SQL Ödev 06 | AGGREGATE FONKSİYONLAR
 
 <br>
 <br>
@@ -409,7 +409,7 @@ LIMIT 1;
 
 <br>
 
-## SQL Ödev 08 | Tablo Oluşturmak | Verileri Güncellemek"
+## SQL Ödev 08 | TABLO OLUŞTURMAK | VERİLERİ GÜNCELLEMEK
 
 <br>
 <br>
