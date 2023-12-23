@@ -15,6 +15,7 @@
 - **SQL Ödev 03 | LIKE & ILIKE - <a href="https://github.com/dorukhanbekdur">Tıklayın.</a>**
 - **SQL Ödev 04 | DISTINCT & COUNT - <a href="https://github.com/dorukhanbekdur">Tıklayın.</a>**
 - **SQL Ödev 05 | ORDER BY | LIMIT & OFFSET - <a href="https://github.com/dorukhanbekdur">Tıklayın.</a>**
+- **SQL Ödev 06 | Aggregate Fonksiyonlar - <a href="https://github.com/dorukhanbekdur">Tıklayın.</a>**
  
 <br>
 
@@ -256,8 +257,7 @@ WHERE city ILIKE 'R%';
 
 ```
 
-SELECT title, length
-FROM film
+SELECT title, length FROM film
 WHERE title LIKE '%n'
 ORDER BY length DESC
 LIMIT 5;
@@ -275,8 +275,7 @@ LIMIT 5;
 
 ```
 
-SELECT title, length
-FROM film
+SELECT title, length FROM film
 WHERE title LIKE '%n'
 ORDER BY length ASC
 LIMIT 5 OFFSET 5;
@@ -294,8 +293,7 @@ LIMIT 5 OFFSET 5;
 
 ```
 
-SELECT *
-FROM customer
+SELECT * FROM customer
 WHERE store_id = 1
 ORDER BY last_name DESC
 LIMIT 4;
@@ -306,6 +304,65 @@ LIMIT 4;
 
 <br>
 
+
+## SQL Ödev 06 | Aggregate Fonksiyonlar
+
+<br>
+<br>
+<br>
+
+1-) film tablosunda bulunan rental_rate sütunundaki değerlerin ortalaması nedir?
+
+
+```
+
+SELECT ROUND(AVG(rental_rate),2) FROM film ;
+
+```
+
+
+
+<br>
+<br>
+<br>
+
+2-) film tablosunda bulunan filmlerden kaç tanesi 'C' karakteri ile başlar?
+
+```
+
+SELECT COUNT(*) FROM film
+WHERE title LIKE 'C%';
+
+```
+
+<br>
+<br>
+<br>
+
+3-) film tablosunda bulunan filmlerden rental_rate değeri 0.99 a eşit olan en uzun (length) film kaç dakikadır?
+
+```
+
+SELECT MAX(length) FROM film 
+WHERE rental_rate = 0.99;
+
+```
+
+<br>
+<br>
+<br>
+
+4-) ffilm tablosunda bulunan filmlerin uzunluğu 150 dakikadan büyük olanlarına ait kaç farklı replacement_cost değeri vardır?
+
+
+```
+
+SELECT COUNT(DISTINCT replacement_cost) FROM film 
+WHERE length > 150;
+
+```
+
+<br>
 
 
 
