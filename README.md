@@ -1,6 +1,6 @@
-<div align="center">
-	<img src="https://assets-global.website-files.com/6097e0eca1e87557da031fef/63739a32259566fc9428cb1d_Deneme.png" alt="alt text" width="353""/>
-<div>
+
+<img src="https://assets-global.website-files.com/6097e0eca1e87557da031fef/63739a32259566fc9428cb1d_Deneme.png" alt="alt text"  width="353"/>
+
 
  # ⚡ SQL Eğitim Patika ⚡
 
